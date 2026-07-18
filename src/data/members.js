@@ -1,0 +1,43 @@
+export const members = [
+  {
+    id: 1,
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    password: 'password123',
+    membership: 'Premium',
+    joinDate: '2024-01-15',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80',
+    age: 28,
+    gender: 'Male',
+    height: 178,
+    weight: 82,
+    goal: 'Build Muscle',
+    bmiHistory: [
+      { date: '2024-01-15', bmi: 25.9, weight: 82 },
+      { date: '2024-02-15', bmi: 25.2, weight: 80 },
+      { date: '2024-03-15', bmi: 24.6, weight: 78 },
+    ],
+    workoutProgress: [
+      { week: 'Week 1', sessions: 3, duration: 165, calories: 1240 },
+      { week: 'Week 2', sessions: 4, duration: 220, calories: 1560 },
+      { week: 'Week 3', sessions: 3, duration: 185, calories: 1380 },
+      { week: 'Week 4', sessions: 5, duration: 290, calories: 2150 },
+    ],
+    attendance: [
+      { date: '2024-07-01', status: 'present' },
+      { date: '2024-07-02', status: 'absent' },
+      { date: '2024-07-03', status: 'present' },
+      { date: '2024-07-04', status: 'present' },
+      { date: '2024-07-05', status: 'present' },
+      { date: '2024-07-08', status: 'present' },
+      { date: '2024-07-09', status: 'present' },
+      { date: '2024-07-10', status: 'absent' },
+    ],
+    notifications: [
+      { id: 1, type: 'info', message: 'Your membership renews in 7 days.', date: '2024-07-15', read: false },
+      { id: 2, type: 'success', message: 'Session with Marcus Johnson confirmed for tomorrow at 6 PM.', date: '2024-07-14', read: false },
+      { id: 3, type: 'warning', message: 'You\'ve missed 2 scheduled sessions this week.', date: '2024-07-13', read: true },
+      { id: 4, type: 'info', message: 'New Yoga class added on Sundays at 8 AM.', date: '2024-07-12', read: true },
+    ],
+  },
+];

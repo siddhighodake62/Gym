@@ -1,0 +1,31 @@
+export const scheduleData = {
+  timeSlots: ['6:00 AM', '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '12:00 PM', '3:00 PM', '5:00 PM', '6:00 PM', '7:00 PM'],
+  days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  classes: [
+    { id: 1, day: 'Monday', time: '6:00 AM', name: 'Morning HIIT', trainer: 'Sarah Chen', duration: 30, spots: 15, booked: 12, color: 'bg-red-500', category: 'HIIT' },
+    { id: 2, day: 'Monday', time: '9:00 AM', name: 'Yoga Flow', trainer: 'Maya Patel', duration: 60, spots: 20, booked: 16, color: 'bg-teal-500', category: 'Yoga' },
+    { id: 3, day: 'Monday', time: '6:00 PM', name: 'Strength Training', trainer: 'Marcus Johnson', duration: 60, spots: 10, booked: 8, color: 'bg-blue-500', category: 'Strength' },
+    { id: 4, day: 'Monday', time: '7:00 PM', name: 'Zumba Night', trainer: 'Sofia Martinez', duration: 60, spots: 25, booked: 20, color: 'bg-pink-500', category: 'Dance' },
+    { id: 5, day: 'Tuesday', time: '7:00 AM', name: 'CrossFit WOD', trainer: 'Jake Thompson', duration: 60, spots: 12, booked: 10, color: 'bg-orange-500', category: 'CrossFit' },
+    { id: 6, day: 'Tuesday', time: '10:00 AM', name: 'Pilates Core', trainer: 'Sofia Martinez', duration: 45, spots: 15, booked: 9, color: 'bg-purple-500', category: 'Flexibility' },
+    { id: 7, day: 'Tuesday', time: '5:00 PM', name: 'Cardio Blast', trainer: 'Sarah Chen', duration: 45, spots: 20, booked: 15, color: 'bg-red-400', category: 'Cardio' },
+    { id: 8, day: 'Tuesday', time: '7:00 PM', name: 'Powerlifting', trainer: 'Marcus Johnson', duration: 90, spots: 8, booked: 7, color: 'bg-gray-600', category: 'Strength' },
+    { id: 9, day: 'Wednesday', time: '6:00 AM', name: 'Boot Camp', trainer: 'Jake Thompson', duration: 60, spots: 15, booked: 13, color: 'bg-orange-600', category: 'HIIT' },
+    { id: 10, day: 'Wednesday', time: '9:00 AM', name: 'Yin Yoga', trainer: 'Maya Patel', duration: 75, spots: 20, booked: 18, color: 'bg-teal-400', category: 'Yoga' },
+    { id: 11, day: 'Wednesday', time: '6:00 PM', name: 'Bodybuilding', trainer: 'Alex Rivera', duration: 75, spots: 8, booked: 6, color: 'bg-purple-600', category: 'Strength' },
+    { id: 12, day: 'Thursday', time: '7:00 AM', name: 'Morning HIIT', trainer: 'Sarah Chen', duration: 30, spots: 15, booked: 11, color: 'bg-red-500', category: 'HIIT' },
+    { id: 13, day: 'Thursday', time: '10:00 AM', name: 'Functional Fitness', trainer: 'David Kim', duration: 60, spots: 12, booked: 8, color: 'bg-green-500', category: 'Functional' },
+    { id: 14, day: 'Thursday', time: '5:00 PM', name: 'Strength Training', trainer: 'Marcus Johnson', duration: 60, spots: 10, booked: 9, color: 'bg-blue-500', category: 'Strength' },
+    { id: 15, day: 'Thursday', time: '7:00 PM', name: 'Zumba', trainer: 'Sofia Martinez', duration: 60, spots: 25, booked: 22, color: 'bg-pink-500', category: 'Dance' },
+    { id: 16, day: 'Friday', time: '6:00 AM', name: 'CrossFit WOD', trainer: 'Jake Thompson', duration: 60, spots: 12, booked: 11, color: 'bg-orange-500', category: 'CrossFit' },
+    { id: 17, day: 'Friday', time: '9:00 AM', name: 'Yoga Flow', trainer: 'Maya Patel', duration: 60, spots: 20, booked: 14, color: 'bg-teal-500', category: 'Yoga' },
+    { id: 18, day: 'Friday', time: '6:00 PM', name: 'HIIT Cardio', trainer: 'Sarah Chen', duration: 45, spots: 20, booked: 17, color: 'bg-red-500', category: 'HIIT' },
+    { id: 19, day: 'Saturday', time: '8:00 AM', name: 'Weekend Warrior', trainer: 'Jake Thompson', duration: 90, spots: 20, booked: 18, color: 'bg-orange-500', category: 'CrossFit' },
+    { id: 20, day: 'Saturday', time: '10:00 AM', name: 'Yoga Workshop', trainer: 'Maya Patel', duration: 90, spots: 15, booked: 12, color: 'bg-teal-500', category: 'Yoga' },
+    { id: 21, day: 'Saturday', time: '12:00 PM', name: 'Zumba Party', trainer: 'Sofia Martinez', duration: 60, spots: 30, booked: 28, color: 'bg-pink-500', category: 'Dance' },
+    { id: 22, day: 'Sunday', time: '9:00 AM', name: 'Recovery Yoga', trainer: 'Maya Patel', duration: 60, spots: 20, booked: 10, color: 'bg-teal-400', category: 'Yoga' },
+    { id: 23, day: 'Sunday', time: '10:00 AM', name: 'Open Gym', trainer: 'Various', duration: 120, spots: 50, booked: 30, color: 'bg-gray-500', category: 'Open' },
+  ],
+};
+
+export const scheduleCategories = ['All', 'HIIT', 'Strength', 'Cardio', 'CrossFit', 'Yoga', 'Dance', 'Functional', 'Open'];

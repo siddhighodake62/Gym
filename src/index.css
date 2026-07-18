@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-dark-bg text-dark-text transition-colors duration-300;
+  }
+
+  .light body {
+    @apply bg-light-bg text-light-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-card;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-700;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl
+           hover:bg-primary-700 active:scale-95 transition-all duration-200 shadow-lg
+           hover:shadow-glow-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2
+           focus:ring-offset-dark-bg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-white font-semibold rounded-xl
+           hover:bg-secondary-600 active:scale-95 transition-all duration-200 shadow-lg
+           hover:shadow-glow-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2
+           focus:ring-offset-dark-bg;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary text-primary font-semibold
+           rounded-xl hover:bg-primary hover:text-white active:scale-95 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark-bg;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-dark-muted font-medium rounded-lg
+           hover:bg-dark-border hover:text-dark-text transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-dark-card border border-dark-border rounded-2xl p-6 shadow-card 
+           hover:shadow-card-hover transition-all duration-300;
+  }
+
+  .card-light {
+    @apply bg-light-card border border-light-border rounded-2xl p-6 shadow-card;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl text-dark-text
+           placeholder-dark-muted focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+           transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold font-poppins mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-dark-muted text-lg mb-12 max-w-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-dark-border rounded-lg;
+  }
+
+  .page-hero {
+    @apply relative min-h-[40vh] flex items-center justify-center overflow-hidden;
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Light mode overrides */
+.light .card {
+  @apply bg-light-card border-light-border text-light-text;
+}
+
+.light .input-field {
+  @apply bg-light-bg border-light-border text-light-text placeholder-light-muted;
+}
+
+.light .btn-ghost {
+  @apply text-light-muted hover:bg-light-border hover:text-light-text;
+}
+
+/* React Toastify custom styles */
+.Toastify__toast {
+  border-radius: 12px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
