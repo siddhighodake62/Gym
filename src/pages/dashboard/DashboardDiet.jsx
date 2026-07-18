@@ -44,4 +44,4 @@ const DashboardDiet = () => {
   );
 };
 
-export default DashboardDiet;
+export default DashboardDiet; 
